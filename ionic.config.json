@@ -1,0 +1,7 @@
+{
+  "name": "my-own-website",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
