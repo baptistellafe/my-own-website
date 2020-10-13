@@ -7,8 +7,39 @@
 @import "~@ionic/angular/css/typography.css";
 @import '~@ionic/angular/css/display.css';
 
-// @import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/padding.css";
 // @import "~@ionic/angular/css/float-elements.css";
 // @import "~@ionic/angular/css/text-alignment.css";
 // @import "~@ionic/angular/css/text-transformation.css";
 // @import "~@ionic/angular/css/flex-utils.css";
+
+@import "./assets/scss/components/button.scss"; // BOTÕES
+
+:root {
+  --white: #fff;
+  --console-header-light-gray: #f3f3f3;
+  --console-header-dark-gray: rgba(222, 225, 230, 0.71);
+  --console-border-gray: rgba(204, 204, 204, 0.65 );
+  --doctype-tag-gray: #C0C4D1;
+  --html-tag-purple: #881280;
+  --html-tag-orange: #994500;
+  --html-tag-blue: #1A1AA6;
+  --html-comment-green: #236E25;
+}
+
+p { margin: 0; }
+
+span {
+  &.doctype-gray { color: var(--doctype-tag-gray); }
+  &.tag-purple { color: var(--html-tag-purple); }
+  &.tag-orange { color: var(--html-tag-orange); }
+  &.tag-blue { color: var(--html-tag-blue); }
+  &.comment-green { color: var(--html-comment-green); }
+}
+
+pre {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Consolas";
+  white-space: pre-wrap;
+}

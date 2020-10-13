@@ -1,0 +1,80 @@
+ion-header {
+  &.what-i-do-header {
+    ion-toolbar {
+      --min-height: 27px;
+      max-height: 27px;
+
+      &:first-child {
+        --background: var(--console-header-dark-gray);
+      }
+
+      &:last-child {
+        --border-color: var(--console-border-gray);
+        --background: var(--console-header-light-gray);
+
+        ul {
+          display: flex;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+ion-content {
+  height: calc(100% - 27px);
+
+  section.what-i-do {
+    width: 100%;
+    background-color: var(--white);
+    font-size: 13px;
+    height: 100%;
+
+    ion-grid {
+      height: 100%;
+
+      ion-row {
+        height: 100%;
+  
+        ion-col {
+          height: 100%;
+  
+          .html-code {
+            border-right: 1px solid var(--console-border-gray);
+            height: 100%;
+
+            ion-footer {
+              &.what-i-do-footer {
+                ion-toolbar {
+                  --min-height: 27px;
+                  max-height: 27px;
+                  --border-color: var(--console-border-gray);
+                  --background: var(--white);
+                }
+              }
+            }
+
+            ion-content {
+              .html-code-tags {
+                padding: 5px 16px;
+                height: 100%;
+                width: 100%;
+
+                pre {
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+ 
