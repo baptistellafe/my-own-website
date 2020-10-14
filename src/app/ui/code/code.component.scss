@@ -1,0 +1,10 @@
+pre {
+  height: 100%;
+  width: 100%;
+
+  div.tag-highlighted {
+    background: var(--html-tag-highlighted-gray);
+    padding: 2px 0 2px 48px;
+    cursor: default;
+  }
+}

@@ -18,13 +18,20 @@
 :root {
   --white: #fff;
   --console-header-light-gray: #f3f3f3;
-  --console-header-dark-gray: rgba(222, 225, 230, 0.71);
+  --console-header-dark-gray: #DEE1E6;
   --console-border-gray: rgba(204, 204, 204, 0.65 );
   --doctype-tag-gray: #C0C4D1;
   --html-tag-purple: #881280;
   --html-tag-orange: #994500;
+  --css-property-orange: #C80000;
+  --css-property-blue: #222285;
+  --css-property-green: #07909A;
   --html-tag-blue: #1A1AA6;
   --html-comment-green: #236E25;
+  --html-tag-highlighted-gray: #CFE8FC;
+  --console-active-tab-blue: #1A73E8;
+  --console-notactive-tab-gray: #5A5A5A;
+  --button-background: #ab3f38;
 }
 
 p { margin: 0; }
@@ -35,7 +42,12 @@ span {
   &.tag-orange { color: var(--html-tag-orange); }
   &.tag-blue { color: var(--html-tag-blue); }
   &.comment-green { color: var(--html-comment-green); }
+  &.property-orange { color: var(--css-property-orange); }
+  &.property-blue { color: var(--css-property-blue); }
+  &.property-green { color: var(--css-property-green); }
 }
+
+.theme-color { color: var(--button-background); }
 
 pre {
   margin: 0;

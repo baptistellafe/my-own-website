@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { WhatIDoPageRoutingModule } from './what-i-do-routing.module';
 
 import { WhatIDoPage } from './what-i-do.page';
+import { UiModule } from 'src/app/ui/ui.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WhatIDoPageRoutingModule
+    WhatIDoPageRoutingModule,
+    UiModule
   ],
   declarations: [WhatIDoPage]
 })

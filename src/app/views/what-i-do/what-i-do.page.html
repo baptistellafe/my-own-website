@@ -1,12 +1,32 @@
 <ion-header mode="ios" class="what-i-do-header">
-  <ion-toolbar mode="ios">
-    <ion-title>diuahduah</ion-title>
+  <ion-toolbar mode="ios" class="flex-toolbar">
+    <div class="toolbar-container space-between">
+      <ul class="devtools-title">
+        <li><img src="../../../assets/images/console-chrome-icon.png" alt="chrome" title="chrome"></li>
+        <li><p>DevTools - baptistella.dev.br/what-i-do</p></li>
+      </ul>
+
+      <img src="../../../assets/images/console-window.png" alt="window">
+    </div>
   </ion-toolbar>
-  <ion-toolbar mode="ios">
-    <ul>
-      <li><img src="../../../assets/images/console-icons.png"></li>
-      <li>icone</li>
-    </ul>
+  <ion-toolbar mode="ios" class="flex-toolbar">
+    <div class="toolbar-container">
+      <ul class="devtools-icons">
+        <li><img src="../../../assets/images/console-icons-left.png" alt="icons" title="icons"></li>
+      </ul>
+  
+      <ul class="devtools-tabs">
+        <li class="active">Elements</li>
+        <li>Console</li>
+        <li>Lighthouse</li>
+        <li>Sources</li>
+        <li>Network</li>
+      </ul>
+
+      <ul class="devtools-icons right">
+        <li><img src="../../../assets/images/console-icons-right.png" alt="icons" title="icons"></li>
+      </ul>
+    </div>
   </ion-toolbar>
 </ion-header>
 
@@ -18,37 +38,15 @@
           <div class="html-code">
             <ion-content>
               <div class="html-code-tags console-style">
-                <pre>
-<span class="doctype-gray">&lt;!DOCTYPE html&gt;</span>
-<span class="tag-purple">&lt;html</span> <span class="tag-orange">lang="</span><span class="tag-blue">pt-br</span><span class="tag-orange">"</span><span class="tag-purple">&gt;</span>
-  <span class="tag-purple">&lt;head&gt;</span>
-    <span class="comment-green">&lt;!-- META TAGs --&gt;</span>
-    <span class="tag-purple">&lt;meta</span> <span class="tag-orange">charset="</span><span class="tag-blue">utf-8</span><span class="tag-orange">"</span><span class="tag-purple">&gt;</span>
-    <span class="tag-purple">&lt;meta</span> <span class="tag-orange">name="</span><span class="tag-blue">viewport</span><span class="tag-orange">"</span> <span class="tag-orange">content="</span><span class="tag-blue">viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no</span><span class="tag-orange">"</span><span class="tag-purple">&gt;</span>
-
-    <span class="comment-green">&lt;!-- ESTILOS --&gt;</span>
-    <span class="tag-purple">&lt;link </span><span class="tag-orange">rel="</span><span class="tag-blue">stylesheet</span><span class="tag-orange">" href="</span><span class="tag-blue">./styles/reset.css</span><span class="tag-orange">"</span><span class="tag-purple">&gt;</span>
-    <span class="tag-purple">&lt;link </span><span class="tag-orange">rel="</span><span class="tag-blue">stylesheet</span><span class="tag-orange">" href="</span><span class="tag-blue">./styles/global.css</span><span class="tag-orange">"</span><span class="tag-purple">&gt;</span>
-
-    <span class="comment-green">&lt;!-- INFORMAÇÕES --&gt;</span>
-    <span class="tag-purple">&lt;link </span><span class="tag-orange">rel="</span><span class="tag-blue">icon</span><span class="tag-orange">" type="</span><span class="tag-blue">image/png</span><span class="tag-orange">" href="</span><span class="tag-blue">./assets/images/favicon.png</span><span class="tag-orange">"</span><span class="tag-purple">&gt;</span>
-    <span class="tag-purple">&lt;title&gt;</span> Baptistella - Desenvolvimento Front-end. <span class="tag-purple">&lt;/title&gt;</span>
-  <span class="tag-purple">&lt;/head&gt;</span>
-
-  <span class="tag-purple">&lt;body&gt;</span>
-    
-    <span class="comment-green">&lt;!-- SCRIPTS --&gt;</span>
-    <span class="tag-purple">&lt;script </span><span class="tag-orange">type="</span><span class="tag-blue">text/javascript</span><span class="tag-orange">" src="</span><span class="tag-blue">./scripts/home.js</span><span class="tag-orange">"</span><span class="tag-purple">&gt;</span>
-  <span class="tag-purple">&lt;/body&gt;</span>
-<span class="tag-purple">&lt;/html&gt;</span>
-
-                </pre>
+                <code-html></code-html>
               </div>
             </ion-content>
 
             <ion-footer mode="ios" class="what-i-do-footer">
               <ion-toolbar mode="ios">
-                <ion-title>diuahduah</ion-title>
+                <pre>
+<span class="tag-purple">html</span>  <span class="tag-purple">body</span>  <span class="tag-purple">section</span><span class="tag-orange">.button</span>  <span class="tag-purple">button</span><span class="tag-orange">.red-btn.what-i-do-btn</span>
+                </pre>
               </ion-toolbar>
             </ion-footer>
           </div>
@@ -56,10 +54,41 @@
 
         <ion-col size="4">
           <div class="css-code">
-            dadadad
+            <ion-header mode="ios">
+              <ion-toolbar mode="ios" class="flex-toolbar">
+                <div class="toolbar-container">
+                  <ul class="devtools-tabs">
+                    <li class="active">Styles</li>
+                    <li>Computed</li>
+                    <li>Event Listeners</li>
+                    <li>DOM Breakpoints</li>
+                    <li>Properties</li>
+                    <li>Acessibility</li>
+                  </ul>
+                </div>
+              </ion-toolbar>
+
+              <ion-toolbar mode="ios" class="flex-toolbar">
+                <div class="toolbar-container">
+                  <input type="text" readonly placeholder="Filter">
+
+                  <ul class="devtools-tabs highlighted">
+                    <li>:hov</li>
+                    <li>.cls</li>
+                  </ul>
+
+                  <img src="../../../assets/images/console-icons-css.png" alt="icons" title="icons">
+                </div>
+              </ion-toolbar>
+            </ion-header>
           </div>
         </ion-col>
       </ion-row>
     </ion-grid>
+  </section>
+
+  <section class="button">
+    <p class="theme-color">Isso é o que eu faço</p>
+    <ion-button class="default" moda="ios" fill="solid" size="default" button-type="button" routerLink="/what-you-see" routerDirection="forward">O que faz/é um front-end?</ion-button>
   </section>
 </ion-content>

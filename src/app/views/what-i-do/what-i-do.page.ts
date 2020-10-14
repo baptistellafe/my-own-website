@@ -1,3 +1,4 @@
+import { CodeComponent } from './../../ui/code/code.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
