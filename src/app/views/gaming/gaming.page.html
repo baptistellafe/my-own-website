@@ -5,23 +5,81 @@
         <ion-toolbar mode="ios">
           <img src="../../../assets/images/csgo-oficial.png" alt="Counter Strike Global Offensive" class="csgo-oficial">
           <ion-button fill="clear" slot="end" class="gaming-social"><ion-icon slot="icon-only" name="logo-steam"></ion-icon></ion-button>
-          <ion-button fill="clear" slot="end" class="gaming-social"><ion-icon slot="icon-only" name="logo-twitch"></ion-icon></ion-button>
           <ion-button fill="clear" slot="end" class="gaming-social"><ion-icon slot="icon-only" name="logo-discord"></ion-icon></ion-button>
         </ion-toolbar>
       </ion-header>
 
-      <div class="gaming-content">
-        <div class="csgo-patent">
-          <img src="../../../assets/images/aguia-1.png" alt="">
+      <div class="gaming-container">
+        <div class="gaming-header">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="3" class="ion-align-items-end">
+                <div class="header-left">
+                  <div class="csgo-patent">
+                    <img src="../../../assets/images/aguia-1.png" alt="">
+          
+                    <!-- <svg>
+                      <circle cx="80" cy="80" r="80"></circle>
+                      <circle cx="80" cy="80" r="80"></circle>
+                    </svg> -->
+                  </div>
+                  
+                  <div class="csgo-name">
+                    <p class="font-personalizada nickname"><b>@</b>phelpsdoborel</p>
+                    <p class="font-personalizada place">Santos/SP, Brasil.</p>
+                  </div>
+                </div>
+              </ion-col>
 
-          <svg>
-            <circle cx="80" cy="80" r="80"></circle>
-            <circle cx="80" cy="80" r="80"></circle>
-          </svg>
+              <ion-col size="9">
+                <div class="csgo-hardware">
+                  <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide>
+                      <div class="hardware-card">
+
+                      </div>
+                    </ion-slide>
+                    <ion-slide>
+                      <div class="hardware-card">
+                        <img src="../../../assets/images/mouse.png" alt="Mouse">
+
+                        <p>Logitech G703</p>
+
+                        <ion-button class="gaming-hardware">Comprar</ion-button>
+                      </div>
+                    </ion-slide>
+                    <ion-slide>
+                      <div class="hardware-card">
+                        
+                      </div>
+                    </ion-slide>
+                  </ion-slides>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
         </div>
-        
-        <div class="csgo-progress">
-          <p class="font-personalizada"><b>@</b>phelpsdoborel</p>
+
+        <div class="gaming-content">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="12">
+                <div class="csgo-plataforms">
+                  <div class="csgo-plataform-card">
+                    <div class="plataform-level faceit"></div>
+
+                    <img src="../../../assets/images/logo-faceit.png" alt="faceit">
+                  </div>
+                
+                  <div class="csgo-plataform-card">
+                    <div class="plataform-level gc"></div>
+
+                    <img src="../../../assets/images/logo-gamersclub.png" alt="gamersclub">
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
         </div>
       </div>
     </div>

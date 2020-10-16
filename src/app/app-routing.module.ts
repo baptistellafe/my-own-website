@@ -1,11 +1,10 @@
-import { HomePage } from './views/home/home.page';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'gaming',
     pathMatch: 'full'
 
   },
@@ -20,6 +19,10 @@ const routes: Routes = [
   {
     path: 'what-you-see',
     loadChildren: () => import('./views/what-you-see/what-you-see.module').then( m => m.WhatYouSeePageModule)
+  },
+  {
+    path: 'gaming',
+    loadChildren: () => import('./views/gaming/gaming.module').then( m => m.GamingPageModule)
   }
 ];
 

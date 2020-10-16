@@ -1,6 +1,15 @@
 ion-button {
   &.default {
     text-transform: none;
-    --background: #ab3f38;
+    --background: var(--theme-color);
+    font-weight: normal;
+  }
+
+  &.gaming-social {
+    --color: #fff;
+  }
+
+  &.gaming-hardware {
+    --background: linear-gradient(45deg, var(--gold-patent-dark), var(--gold-patent));
   }
 }
