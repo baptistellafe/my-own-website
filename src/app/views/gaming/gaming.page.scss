@@ -1,0 +1,97 @@
+ion-content {
+  // --background: radial-gradient(ellipse farthest-corner at 50% 30%, #2b2d33 0%, #1e2025 50%, #14151a 100%);
+  --background: #111;
+
+  .gaming {
+    height: 100%;
+    background: url('../../../assets/images/csgo.png') no-repeat center top ;
+
+    audio {
+      display: none;
+    }
+
+    .gaming-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      ion-header {
+        --background: transparent;
+
+        ion-toolbar {
+          --background: transparent;
+
+          .csgo-oficial { width: 220px; margin-top: 20px;}
+        }
+      }
+
+      .gaming-content {
+        width: 100%;
+        margin-top: 135px;
+
+        .csgo-patent {
+          margin: 0 auto;
+          border-radius: 100%;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          &:before {
+            position: absolute;
+            content: url('../../../assets/images/aguia-1.png');
+            display: block;
+            animation: pulse infinite 2s;
+            opacity: 0;
+            transform: scale(1);
+          }
+
+          svg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            fill: none;
+            width: 180px;
+            height: 180px;
+
+            & circle {
+              fill: none;
+              stroke: #111;
+              position: absolute;
+              transform: translate(5%, 5%);
+              stroke-linecap: round;
+
+              &:nth-child(1) {
+                stroke-width: #fff;
+              }
+
+              &:nth-child(2) {
+                stroke-dasharray: calc((500 / 18) * 15);
+                stroke-dashoffset: 0;
+                stroke: var(--gold-patent);
+                stroke-width: 4;
+              }
+            }
+          }
+
+          img {
+            height: 70px;
+            filter: drop-shadow(2px 2px 4px #111);
+          }
+        }
+
+        .csgo-progress {
+          margin-top: 50px;
+
+          p {
+            font-size: 26px;
+            text-align: center;
+            color: #eee;
+          }
+        }
+      }
+    }
+  }
+}

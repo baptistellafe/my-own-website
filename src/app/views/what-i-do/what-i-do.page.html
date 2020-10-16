@@ -81,6 +81,14 @@
                 </div>
               </ion-toolbar>
             </ion-header>
+
+            <ion-content>
+              <div class="style-properties">
+                <span>element.style &#123;</span>
+                <span class="flex"><input type="checkbox" [attr.checked]="selectColor" (change)="selectColor = !selectColor"> <span class="property-orange mg-left-5">background:</span> var(--theme-color);</span>
+                <span>&#125;</span>
+              </div>
+            </ion-content>
           </div>
         </ion-col>
       </ion-row>
@@ -88,7 +96,6 @@
   </section>
 
   <section class="button">
-    <p class="theme-color">Isso é o que eu faço</p>
-    <ion-button class="default" moda="ios" fill="solid" size="default" button-type="button" routerLink="/what-you-see" routerDirection="forward">O que faz/é um front-end?</ion-button>
+    <ion-button [class.default]="selectColor" moda="ios" fill="solid" size="default" button-type="button" routerLink="/what-you-see" routerDirection="forward">Conheça meu trabalho <ion-icon class="mg-left-5" name="arrow-forward-outline"></ion-icon></ion-button>
   </section>
 </ion-content>

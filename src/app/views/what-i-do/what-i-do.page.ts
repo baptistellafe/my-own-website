@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatIDoPage implements OnInit {
 
-  constructor() { }
+  selectColor: boolean;
+
+  constructor() { 
+    
+  }
 
   ngOnInit() {
+    this.selectColor = false;
   }
 
 }
