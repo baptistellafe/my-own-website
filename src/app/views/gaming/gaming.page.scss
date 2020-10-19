@@ -3,8 +3,12 @@ ion-content {
   --background: #111;
 
   .gaming {
-    height: 100%;
-    background: url('../../../assets/images/csgo.png') no-repeat center top ;
+    height: auto;
+    min-height: 100%;
+    background-image: url('../../../assets/images/csgo.png'),  url('../../../assets/images/pattern.png');
+    background-repeat: no-repeat, repeat;
+    background-position-x: center, left;
+    background-position-y: top, top;
 
     audio {
       display: none;
@@ -14,6 +18,7 @@ ion-content {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
+      padding: 16px;
 
       ion-header {
         --background: transparent;
@@ -21,43 +26,28 @@ ion-content {
         ion-toolbar {
           --background: transparent;
 
-          .csgo-oficial { width: 220px; margin-top: 20px;}
+          .toolbar-content {
+            display: flex;
+            align-items: center;
+
+            .csgo-oficial {
+              flex: 1;
+
+              img {
+                width: 220px;
+              }
+            }
+          }
         }
       }
 
       .gaming-container {
         width: 100%;
-        margin-top: 135px;
+        margin-top: 50px;
 
         .gaming-header {
           width: 100%;
           border-radius: 25px;
-
-          .header-left {
-            padding: 30px 0 30px 0;
-          }
-
-          .csgo-hardware {
-            width: 100%;
-            height: 100%;
-            box-shadow: -10px 0px 5px -4px rgba(0, 0, 0, .2), 10px 0px 5px -4px rgba(0, 0, 0, .2);
-            border-radius: 20px;
-
-            ion-slides {
-              height: 100%;
-
-              ion-slide {
-                .hardware-card {
-                  > p {
-                    color: #fff;
-                    font-weight: normal;
-                    font-size: 14px;
-                    margin: 16px 0;
-                  }
-                }
-              }
-            }
-          }
 
           .csgo-name {
             margin-top: 10px;
@@ -141,15 +131,95 @@ ion-content {
         }
 
         .gaming-content {
+          .csgo-text {
+            max-width: 600px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(to bottom, #111 0%, transparent 50%);
+            
+            border-top: 1px solid #222;
+
+            p {
+              color: #777;
+              font-size: 14px;
+
+              b {
+                color: #999;
+              }
+
+              &:not(:last-child) {
+                margin-bottom: 20px;
+              }
+
+              &.welcome {
+                padding-bottom: 10px;
+              }
+
+              span {
+                font-weight: normal;
+                font-family: var(--font-personalizada);
+
+                &.en { font-size: 14px; color: #555; }
+                &.es { font-size: 18px; color: #ccc;}
+                &.pt { font-size: 22px; color: var(--gold-patent); }
+              }
+            }
+          }
+
+          .csgo-hardware {
+            width: 100%;
+            height: 100%;
+            // box-shadow: -10px 0px 5px -4px rgba(0, 0, 0, .2), 10px 0px 5px -4px rgba(0, 0, 0, .2);
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+
+            ion-button {
+              margin-top: 30px;
+
+              ion-icon {
+                margin-right: 10px;
+              }
+            }
+
+            ion-slides {
+              ion-slide {
+                .hardware-card {
+                  width: 100%;
+
+                  .hardware-card-header {
+                    background: linear-gradient(to bottom, #111 0%, transparent 50%);
+                    padding: 10px;
+                    width: 100%;
+                    height: 180px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-top: 1px solid #222;
+                  } 
+
+                  .hardware-card-content {
+                    > p {
+                      color: #fff;
+                      font-weight: normal;
+                      font-size: 14px;
+                      margin: 16px 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
           .csgo-plataforms {
             width: 100%;
             max-width: 500px;
             margin: 0 auto;
-            margin-top: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-bottom: 30px;
+            margin: 0 auto 20px auto;
             border-radius: 20px;
   
             .csgo-plataform-card {
@@ -217,6 +287,28 @@ ion-content {
             }
           }
         }
+      }
+    }
+  }
+}
+
+ion-footer {
+  background: #000;
+
+  ion-toolbar {
+    --background: linear-gradient(to right, #111 0%, transparent 50%), linear-gradient(to left, #111 0%, transparent 50%);
+    padding: 0 16px;
+
+    p {
+      color: #fff;
+      font-size: 12px;
+
+      ion-icon {
+        color: var(--gold-patent);
+      }
+
+      a {
+        color: var(--gold-patent);
       }
     }
   }

@@ -7,9 +7,15 @@ ion-button {
 
   &.gaming-social {
     --color: #fff;
+
+    img {
+      width: 24px;
+    }
   }
 
-  &.gaming-hardware {
+  &.gaming-default {
     --background: linear-gradient(45deg, var(--gold-patent-dark), var(--gold-patent));
+    text-transform: none;
+    font-weight: normal;
   }
 }

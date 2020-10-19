@@ -1,0 +1,21 @@
+@media only screen and (max-width: 700px) {
+  ion-content {
+    .gaming {
+      height: auto;
+      
+      .gaming-container {
+        ion-header {
+          ion-toolbar {
+            .toolbar-content {
+              justify-content: center;
+
+              .csgo-oficial {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

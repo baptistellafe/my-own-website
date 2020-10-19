@@ -4,13 +4,17 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'gaming',
+    redirectTo: 'what-i-do',
     pathMatch: 'full'
 
   },
   {
     path: 'home',
     loadChildren: () => import('./views/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'coding',
+    loadChildren: () => import('./views/what-i-do/what-i-do.module').then( m => m.WhatIDoPageModule)
   },
   {
     path: 'what-i-do',

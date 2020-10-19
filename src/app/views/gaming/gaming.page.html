@@ -3,9 +3,18 @@
     <div class="gaming-container">
       <ion-header mode="ios" class="ion-no-border">
         <ion-toolbar mode="ios">
-          <img src="../../../assets/images/csgo-oficial.png" alt="Counter Strike Global Offensive" class="csgo-oficial">
-          <ion-button fill="clear" slot="end" class="gaming-social"><ion-icon slot="icon-only" name="logo-steam"></ion-icon></ion-button>
-          <ion-button fill="clear" slot="end" class="gaming-social"><ion-icon slot="icon-only" name="logo-discord"></ion-icon></ion-button>
+          <div class="toolbar-content">
+            <div class="csgo-oficial">
+              <img src="../../../assets/images/csgo-oficial.png" alt="Counter Strike Global Offensive" >
+            </div>
+
+            <ion-button fill="clear" class="gaming-social" href="https://steamcommunity.com/id/phelpsdoborel/" target="_blank"><ion-icon slot="icon-only" name="logo-steam"></ion-icon></ion-button>
+            <ion-button fill="clear" class="gaming-social" href="https://discord.gg/Kx7fCgh" target="_blank"><ion-icon slot="icon-only" name="logo-discord"></ion-icon></ion-button>
+            <ion-button fill="clear" class="gaming-social" href="https://www.twitch.tv/phelpsdoborel" target="_blank"><ion-icon slot="icon-only" name="logo-twitch"></ion-icon></ion-button>
+            <ion-button fill="clear" class="gaming-social" href="https://gamersclub.com.br/jogador/1365561" target="_blank"><img src="../../../assets/images/logo-gamersclub-g.png" alt="gamersclub"></ion-button>
+            <ion-button fill="clear" class="gaming-social" href="https://www.faceit.com/pt/players/_pdb" target="_blank
+            "><img src="../../../assets/images/logo-faceit-icon.png" alt="faceit"></ion-button>
+          </div>
         </ion-toolbar>
       </ion-header>
 
@@ -13,53 +22,26 @@
         <div class="gaming-header">
           <ion-grid>
             <ion-row>
-              <ion-col size="3" class="ion-align-items-end">
-                <div class="header-left">
-                  <div class="csgo-patent">
-                    <img src="../../../assets/images/aguia-1.png" alt="">
-          
-                    <!-- <svg>
-                      <circle cx="80" cy="80" r="80"></circle>
-                      <circle cx="80" cy="80" r="80"></circle>
-                    </svg> -->
-                  </div>
-                  
-                  <div class="csgo-name">
-                    <p class="font-personalizada nickname"><b>@</b>phelpsdoborel</p>
-                    <p class="font-personalizada place">Santos/SP, Brasil.</p>
-                  </div>
+              <ion-col size="12">
+                <div class="csgo-patent">
+                  <img src="../../../assets/images/aguia-1.png" alt="">
+        
+                  <!-- <svg>
+                    <circle cx="80" cy="80" r="80"></circle>
+                    <circle cx="80" cy="80" r="80"></circle>
+                  </svg> -->
                 </div>
-              </ion-col>
-
-              <ion-col size="9">
-                <div class="csgo-hardware">
-                  <ion-slides pager="false" [options]="slideOpts">
-                    <ion-slide>
-                      <div class="hardware-card">
-
-                      </div>
-                    </ion-slide>
-                    <ion-slide>
-                      <div class="hardware-card">
-                        <img src="../../../assets/images/mouse.png" alt="Mouse">
-
-                        <p>Logitech G703</p>
-
-                        <ion-button class="gaming-hardware">Comprar</ion-button>
-                      </div>
-                    </ion-slide>
-                    <ion-slide>
-                      <div class="hardware-card">
-                        
-                      </div>
-                    </ion-slide>
-                  </ion-slides>
+                
+                <div class="csgo-name">
+                  <p class="font-personalizada nickname"><b>@</b>phelpsdoborel</p>
+                  <p class="font-personalizada place">Santos/SP, Brasil.</p>
                 </div>
               </ion-col>
             </ion-row>
           </ion-grid>
         </div>
 
+        
         <div class="gaming-content">
           <ion-grid>
             <ion-row>
@@ -78,14 +60,77 @@
                   </div>
                 </div>
               </ion-col>
+
+              <ion-col size-sm="12" size-md="6">
+                <div class="csgo-text">
+                  <p class="welcome">
+                    <span class="en">Hi there</span>, 
+                    <span class="es">hola, qué pasa</span>, 
+                    <span class="pt">SALVE CATIORO!</span>
+                  </p>
+
+                  <p>
+                    Caro amigo jogador, se você chegou até aqui é por que provavelmente 
+                    visitou meu perfil na <b>steam</b> e provavelmente queria saber sobre
+                    mais sobre mim.
+                  </p>
+
+                  <p>
+                    Todos nós temos dias <b>bons</b> e <b>ruins</b>, então, de duas...uma. Você veio por que eu dei muita bala ou joguei muito mal.
+                  </p>
+
+                  <p>
+                    Geralmente as pessoas me visitam pelo segundo motivo mas independente de qual for, peço desculpas por qualquer coisa ou agradeço se jogou no meu time e gostou, fico feliz.
+                  </p>
+
+                  <p>
+                    Criei este meio de contato por alguns motivos: <b>Counter Strike</b> é, foi e sempre será o único jogo que perco meu tempo (desde novo como a maioria). Outro motivo é por que eu adoraria personalizar
+                    a página da steam com o que eu gostaria mas não é possível e outro motivo é mandar uma mensagem:
+                  </p>
+
+                  <p>
+                    CS é um dos jogos mais populares do mundo e quem joga, <b>ama</b>. O jogo é apenas uma diversão, um passa-tempo (para alguns até profissão), então por que não fazer dele um lugar bacana?
+                    ou seja... <b>não ser tóxico</b>, <b>não trapacear</b>, pelo contrário, <b>FORTALECER A COMUNIDADE</b>, fazer amizades...
+                  </p>
+                </div>
+              </ion-col>
+
+              <ion-col size-sm="12" size-md="6">
+                <div class="csgo-hardware">
+                  <ion-slides pager="false" [options]="hardware">
+                    <ion-slide *ngFor="let equipament of hardware.equipaments">
+                      <div class="hardware-card">
+                        <div class="hardware-card-header">
+                          <img src="{{ '../../../assets/images/' + equipament.type + '.png' }}" [alt]="equipament.type" [title]="equipament.type">
+                        </div>
+
+                        <div class="hardware-card-content">
+                          <p>Logitech G703</p>
+                        </div>
+                      </div>
+                    </ion-slide>
+                  </ion-slides>
+
+                  <ion-button class="gaming-default" href="https://wa.me/5513997330408" target="_blank"><ion-icon name="wallet-outline"></ion-icon> Quero ter uma página assim</ion-button>
+                </div>
+              </ion-col>
             </ion-row>
           </ion-grid>
         </div>
       </div>
     </div>
 
-    <!-- <audio autoplay loop>
+    <audio autoplay loop>
       <source src="../../../assets/sound/eagle-sound.mp3" type="audio/mpeg">
-    </audio> -->
+    </audio>
   </section>
 </ion-content>
+
+<ion-footer mode="ios" class="ion-no-border">
+  <ion-toolbar mode="ios">
+    <p slot="start">Feito com <ion-icon name="heart-outline"></ion-icon> para amantes de Counter-Strike.</p>
+
+    <p slot="end">Desenvolvedor: <a href="#">Phelps</a></p>
+  </ion-toolbar>
+</ion-footer>
+

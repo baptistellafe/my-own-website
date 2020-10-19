@@ -3,18 +3,58 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-gaming',
   templateUrl: './gaming.page.html',
-  styleUrls: ['./gaming.page.scss'],
+  styleUrls: ['./gaming.page.scss', './gaming-responsive.page.scss'],
 })
 export class GamingPage implements OnInit {
 
-  slideOpts = {
-    slidesPerView: 3,
+  pessoa = {
+    nome: 'felipe',
+    idade: 30
+  }
+
+  hardware = {
+    equipaments: [
+      {
+        type: 'mouse'
+      },
+      {
+        type: 'keyboard'
+      },
+      {
+        type: 'headset'
+      },
+      {
+        type: 'mousepad'
+      },
+      {
+        type: 'i9'
+      },
+      {
+        type: 'placadevideo'
+      },
+      {
+        type: 'fonte'
+      },
+      {
+        type: 'placamae'
+      },
+      {
+        type: 'memoria'
+      },
+      {
+        type: 'watercooler'
+      },
+      {
+        type: 'ssd'
+      },
+    ],
+    slidesPerView: 2,
     coverflowEffect: {
-      rotate: 50,
+      rotate: 0,
       stretch: 0,
-      depth: 100,
+      depth: 0,
       modifier: 1,
-      slideShadows: true,
+      slideShadows: false,
     },
     on: {
       beforeInit() {
