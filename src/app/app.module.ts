@@ -1,3 +1,4 @@
+import { ViewsModule } from './views/views.module';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,8 +8,6 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { UiModule } from './ui/ui.module';
-
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +15,8 @@ import { UiModule } from './ui/ui.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ViewsModule
   ],
   providers: [
     StatusBar,
