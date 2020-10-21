@@ -17,6 +17,9 @@ import { UiModule } from 'src/app/ui/ui.module';
     WhatIDoPageRoutingModule,
     UiModule
   ],
-  declarations: [WhatIDoPage]
+  declarations: [WhatIDoPage],
+  exports: [
+    UiModule
+  ]
 })
 export class WhatIDoPageModule {}
