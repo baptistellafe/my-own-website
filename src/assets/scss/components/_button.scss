@@ -1,16 +1,15 @@
 ion-button {
-  &.default {
-    text-transform: none;
-    --background: var(--theme-color);
-    font-weight: normal;
-  }
+  font-weight: normal;
+  text-transform: none;
+
+  &.default { --background: var(--light-purple); }
+
+  &.default-dark { --background: var(--dark-purple); }
 
   &.gaming-social {
     --color: #fff;
 
-    img {
-      width: 24px;
-    }
+    img { width: 24px; }
   }
 
   &.gaming-default {

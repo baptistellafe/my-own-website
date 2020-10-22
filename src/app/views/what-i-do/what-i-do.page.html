@@ -3,7 +3,7 @@
     <div class="toolbar-container space-between">
       <ul class="devtools-title">
         <li><img src="../../../assets/images/console-chrome-icon.png" alt="chrome" title="chrome"></li>
-        <li><p>DevTools - baptistella.dev.br/what-i-do</p></li>
+        <li><p>DevTools - felipebv.com.br/coding</p></li>
       </ul>
 
       <img src="../../../assets/images/console-window.png" alt="window">
@@ -84,10 +84,60 @@
 
             <ion-content>
               <div class="style-properties">
-                <span>element.style &#123;</span>
-                <span class="flex"><input type="checkbox" [attr.checked]="selectColor" (change)="selectColor = !selectColor"> <span class="property-orange mg-left-5">background:</span> var(--theme-color);</span>
+                <span class="style-element-gray">element.style &#123;</span>
+                <span class="flex"><input type="checkbox" [(ngModel)]="selectColor" (change)="selectColor = !selectColor" [attr.checked]="selectColor.checked" (change)="selectColor = !selectColor"> <span class="property-orange mg-left-5 mg-right-5">background:</span> var(--purple-dark);</span>
                 <span>&#125;</span>
               </div>
+
+              <div class="style-properties">
+                <div class="css-origin"><span>buttons.scss</span></div>
+                <span>.what-i-do-btn &#123;</span>
+                <span class="flex no-checkbox"><span class="property-orange mg-left-5 mg-right-5">padding: </span> 10px 20px;</span>
+                <span class="flex no-checkbox"><span class="property-orange mg-left-5 mg-right-5">color: </span>white;</span>
+                <span class="flex no-checkbox" [ngClass]="{' line-through': selectColor}"><span class="property-orange mg-left-5 mg-right-5">background:</span> var(--purple-light);</span>
+                <span class="flex no-checkbox"><span class="property-orange mg-left-5 mg-right-5">font-size: </span> 14px;</span>
+                <span class="flex no-checkbox"><span class="property-orange mg-left-5 mg-right-5">margin:</span> 4px 2px;</span>
+                <span>&#125;</span>
+              </div>
+
+              <div class="style-properties">
+                <div class="css-origin"><span>global.scss</span></div>
+                <span>button &#123;</span>
+                <span class="flex no-checkbox line-through"><span class="property-orange mg-left-5 mg-right-5">padding: </span> 0;</span>
+                <span class="flex no-checkbox line-through"><span class="property-orange mg-left-5 mg-right-5">color: </span>#333333;</span>
+                <span class="flex no-checkbox line-through"><span class="property-orange mg-left-5 mg-right-5">background:</span> #CCCCCC;</span>
+                <span class="flex no-checkbox line-through"><span class="property-orange mg-left-5 mg-right-5">font-size: </span> 12px;</span>
+                <span>&#125;</span>
+              </div>
+
+              <div class="style-properties native">
+                <div class="css-origin"><span class="native italic">user agent stylesheet</span></div>
+                <span class="italic">button &#123;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">appearance: </span> button;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">-webkit-writing-mode: </span>horizontal-tb !important;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">text-rendering: </span>auto;</span>
+                <span class="flex no-checkbox italic line-through"><span class="property-orange mg-left-5 mg-right-5">color: </span>-internal-light-dark(black, white)</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">letter-spacing: </span>normal;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">word-spacing: </span>normal;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">text-transform: </span>none;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">text-indent: </span>0px;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">text-shadow: </span>none;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">display: </span>inline-block;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">text-align: </span>center;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">align-items: </span>flex-start;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">cursor: </span>default;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">box-sizing: </span>border-box;</span>
+                <span class="flex no-checkbox italic line-through"><span class="property-orange mg-left-5 mg-right-5">margin: </span>0em;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">font: </span>400 13.3333px Arial;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">padding: </span>1px 6px;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">border-width: </span>2px;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">border-style: </span>outset;</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">border-color: </span>-internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));</span>
+                <span class="flex no-checkbox italic"><span class="property-orange mg-left-5 mg-right-5">border-image: </span>initial;</span>
+                <span>&#125;</span>
+              </div>
+
+              <img src="../../../assets/images/mg-bd-pd.png" alt="Space" style="text-align: center; display: block; margin: 20px auto;">
             </ion-content>
           </div>
         </ion-col>
@@ -96,6 +146,6 @@
   </section>
 
   <section class="button">
-    <ion-button [class.default]="selectColor" moda="ios" fill="solid" size="default" button-type="button" routerLink="/gaming" routerDirection="forward">Conheça meu trabalho <ion-icon class="mg-left-5" name="arrow-forward-outline"></ion-icon></ion-button>
+    <ion-button [ngClass]="{'default': !selectColor, 'default-dark': selectColor}" moda="ios" fill="solid" button-type="button" routerLink="/gaming" routerDirection="forward">Conheça meu trabalho <ion-icon class="mg-left-5" name="arrow-forward-outline"></ion-icon></ion-button>
   </section>
 </ion-content>

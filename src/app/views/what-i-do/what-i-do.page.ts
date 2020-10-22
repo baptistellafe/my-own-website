@@ -15,7 +15,7 @@ export class WhatIDoPage implements OnInit {
   }
 
   ngOnInit() {
-    this.selectColor = false;
+    this.selectColor = true;
   }
 
 }

@@ -37,6 +37,9 @@
   --gold-patent-dark: #E2BF10;
   --gamersclub-blue: #407FBF;
   --faceit-orange: #FF5E00;
+  --light-purple: #4B1672;
+  --dark-purple: #421069;
+  --style-element-gray: #757575;
 
   --font-personalizada: 'Abel', sans-serif;
 }
@@ -54,6 +57,9 @@ p { margin: 0; }
 .property-green { color: var(--css-property-green); }
 .theme-color { color: var(--theme-color); }
 .gold-patent { color: var(--gold-patent); }
+.light-purple { color: var(--light-purple); }
+.dark-purple { color: var(--dark-purple); }
+.style-element-gray { color: var(--style-element-gray); }
 
 pre {
   margin: 0;
@@ -63,6 +69,7 @@ pre {
 }
 
 .mg-left-5 { margin-left: 5px; }
+.mg-right-5 { margin-right: 5px; }
 
 @keyframes pulse {
   0% {

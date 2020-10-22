@@ -289,13 +289,54 @@ ion-content {
                 font-size: 12px;
                 font-family: "Consolas";
                 border-bottom: 1px solid var(--console-border-gray);
-                line-height: 150%;
+                line-height: 130%;
+                position: relative;
+
+                &.native {
+                  background: #FAFAFA;
+
+                  .css-origin {
+                    background: #FAFAFA;
+                  }
+                }
+
+                .css-origin {
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  background: white;
+                  padding: 2px 5px 5px 5px;
+
+                  span {
+                    text-decoration: underline;
+                    color: var(--style-element-gray);
+                    cursor: pointer;
+                  }
+                }
 
                 span {
+                  &.italic {
+                    font-style: italic;
+                  }
+
+                  &.native {
+                    text-decoration: none;
+                    cursor: default !important;
+                    text-decoration: none !important;
+                  }
+
+                  &.line-through {
+                    text-decoration: line-through;
+                  }
+
                   &.flex {
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
+
+                    &.no-checkbox {
+                      padding-left: 10px;
+                    }
                   }
                 }
               }
