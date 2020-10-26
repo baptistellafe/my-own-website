@@ -1,0 +1,17 @@
+@media screen and (max-width: 992px) {
+  ion-content.with-me {
+    background-size: contain;
+
+    section.what-you-see {
+      .perfil {
+        height: 100vh;
+        justify-content: center;
+      }
+
+      ion-slides {
+        height: 100vh;
+        padding: 20px 0;
+      }
+    }
+  }
+}

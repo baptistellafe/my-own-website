@@ -6,7 +6,27 @@ ion-button {
 
   &.default-dark { --background: var(--dark-purple); }
   
-  &.green-light { --background: var(--light-green); }
+  &.green-light {
+    --color: var(--light-green);
+    --background: transparent;
+    --border-color: var(--light-green);
+    --border-width: 1px;
+    font-family: var(--font-personalizada);
+    font-size: 18px;
+    --padding-start: 0;
+    --padding-end: 0;
+    --background-hover: transparent;
+  }
+
+  &.gray {
+    --color: #777;
+    --background: #111;
+    --border-color: #222;
+    --border-width: 1px;
+    font-family: var(--font-personalizada);
+    font-size: 16px;
+    --background-hover: #222;
+  }
 
   &.gaming-social {
     --color: #fff;
