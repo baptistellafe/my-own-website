@@ -11,7 +11,7 @@
 // @import "~@ionic/angular/css/float-elements.css";
 // @import "~@ionic/angular/css/text-alignment.css";
 // @import "~@ionic/angular/css/text-transformation.css";
-// @import "~@ionic/angular/css/flex-utils.css";
+@import "~@ionic/angular/css/flex-utils.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap'); // FONTE DO BOREL
 @import "./assets/scss/components/button.scss"; // BOTÕES
@@ -40,12 +40,13 @@
   --light-purple: #4B1672;
   --dark-purple: #421069;
   --style-element-gray: #757575;
+  --light-green: #C4F776;
 
   --font-personalizada: 'Abel', sans-serif;
 }
 
 p { margin: 0; }
-.font-personalizada { font-family: var(--font-personalizada); }
+.font-personalizada { font-family: var(--font-personalizada); font-weight: normal;}
 
 .doctype-gray { color: var(--doctype-tag-gray); }
 .tag-purple { color: var(--html-tag-purple); }
@@ -60,6 +61,7 @@ p { margin: 0; }
 .light-purple { color: var(--light-purple); }
 .dark-purple { color: var(--dark-purple); }
 .style-element-gray { color: var(--style-element-gray); }
+.light-green { color: var(--light-green); }
 
 pre {
   margin: 0;
@@ -79,5 +81,14 @@ pre {
   100% {
     transform: scale(0.6);
     opacity: 0;
+  }
+}
+          
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

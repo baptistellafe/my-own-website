@@ -1,9 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>what-you-see</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="with-me">
+  <section class="what-you-see">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <div class="perfil">
+            <div class="photo">
+              <img src="../../../assets/images/felipebv.png" alt="Foto">
+            </div>
+            <div class="aboutme font-personalizada">
+              <p>Felipe Baptistella Vieira <span>(<span class="light-green">Phelps</span>).</span></p>
+              <p class="front-title">FRONT-END DEVELOPER</p>
+              <hr>
+            </div>
+          </div>
+        </ion-col>
+  
+        <ion-col size="8">
+          <ion-slides pager="true" [options]="slidePhelps">
+            <ion-slide>
+              <div class="slide-content">
+                <ion-item mode="ios" lines="none">
+                  <ion-icon slot="start" name="information-outline"></ion-icon>
+                  <ion-label>Sobre</ion-label>
+                </ion-item>
+                <div class="slide-text">
+                  <hr>
+                  
+                  <p>O profissional <i>front-end</i> é responsável pelo desenvolvimento de <b>interfaces</b>, seja na web ou aplicativo.
+                  Um projeto possui diversas camadas e nós somos responsáveis pela camada visual, digamos assim. Cuidamos da estrutura, 
+                  da estética e também das animações que ocorrem na tela.</p>
 
-<ion-content>
+                  <p>É isso que eu faço, dou vida as telas. Sou completamente <b>APAIXONADO</b> pelo que faço e me mantenho em constante evolução para fazer o melhor que posso. </p>
 
+                  <ion-button class="default" mode="md" fill="solid" button-type="button" routerLink="/about" routerDirection="forward" shape="square">Minha formação<ion-icon class="mg-left-5" name="arrow-forward-outline"></ion-icon></ion-button>
+                </div>
+              </div>
+            </ion-slide>
+            <ion-slide>
+              <div class="slide-content">
+                <ion-item mode="ios" lines="none">
+                  <ion-icon slot="start" name="information-outline"></ion-icon>
+                  <ion-label>Formação</ion-label>
+                </ion-item>
+              </div>
+            </ion-slide>
+            <ion-slide>
+              <div class="slide-content">
+                <ion-item mode="ios" lines="none">
+                  <ion-icon slot="start" name="information-outline"></ion-icon>
+                  <ion-label>Skills</ion-label>
+                </ion-item>
+              </div>
+            </ion-slide>
+            <ion-slide>
+              <div class="slide-content">
+                <ion-item mode="ios" lines="none">
+                  <ion-icon slot="start" name="information-outline"></ion-icon>
+                  <ion-label>Experiência</ion-label>
+                </ion-item>
+              </div>
+            </ion-slide>
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
 </ion-content>

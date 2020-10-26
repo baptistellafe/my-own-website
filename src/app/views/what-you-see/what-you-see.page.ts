@@ -12,4 +12,9 @@ export class WhatYouSeePage implements OnInit {
   ngOnInit() {
   }
 
+  slidePhelps = {
+    initialSlide: 0,
+    speed: 400
+  };
+
 }

@@ -5,6 +5,8 @@ ion-button {
   &.default { --background: var(--light-purple); }
 
   &.default-dark { --background: var(--dark-purple); }
+  
+  &.green-light { --background: var(--light-green); }
 
   &.gaming-social {
     --color: #fff;

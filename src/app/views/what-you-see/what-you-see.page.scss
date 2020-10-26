@@ -1,0 +1,175 @@
+ion-content.with-me {
+  --background: url('../../../assets/images/dev-bg.png') no-repeat left center #111;
+
+  section.what-you-see {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    ion-grid {
+      width: 100%;
+    }
+
+    .perfil {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .aboutme {
+        width: 100%;
+        padding-top: 30px;
+
+        hr {
+          border: 0;
+          height: 1px;
+          background: linear-gradient(to right, #111, #444, #111);
+          width: 100%;
+          margin-top: 30px;
+          position: relative;
+          overflow: visible;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            background: linear-gradient(to right, #111,#000, #111);
+            left: 0;
+            width: 100%;
+            height: 1px;
+          }
+        }
+        
+        p {
+          color: #777;
+          font-size: 22px;
+          text-align: center;
+          text-shadow: 0 2px 1px #000;
+
+          &.front-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-top: 3px;
+            color: #888;
+          }
+        }
+      }
+
+      .photo {
+        width: 260px;
+        height: 260px;
+        border-radius: 100%;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, .7);
+        background: #111;
+        border: 1px solid #222;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          lefT: 2px;
+          top: 2px;
+          right: 2px;
+          bottom: 2px;
+          content: '';
+          z-index: 1;
+          border-radius: 100%;
+          background: linear-gradient(to right, transparent 70%, var(--light-green));
+          animation: rotating 3s linear infinite;
+        }
+
+        img {
+          position: absolute;
+          z-index: 2;
+          border-radius: 100%;
+          width: 252px;
+          height: 252px;
+          left: 3px;
+          top: 3px;
+          background: #111;
+        }
+      }
+    }
+
+    .swiper-slide-active {
+      
+    }
+
+    ion-slides {
+      height: 100%;
+      --bullet-background-active: var(--light-green);
+
+      ion-slide {
+        align-items: flex-start;
+
+        .slide-content {
+          justify-content: flex-start;
+          text-align: left;
+          width: 100%;
+    
+          ion-item {
+            --background: transparent;
+    
+            ion-icon {
+              color: #777;
+              font-size: 30px;
+              background: #111;
+              border-radius: 7px;
+              padding: 5px;
+              border: 1px solid #191919;
+              box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            }
+    
+            ion-label {
+              color: #777;
+            }
+          }
+
+          .slide-text {
+            padding: 12px 22px;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            position: relative;
+
+            hr {
+              border: 0;
+              height: 1px;
+              background: linear-gradient(to right, #111, #444, #111);
+              width: 100%;
+              position: relative;
+              overflow: visible;
+              margin: 0;
+    
+              &::after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                background: linear-gradient(to right, #111,#000, #111);
+                left: 0;
+                width: 100%;
+                height: 1px;
+              }
+            }
+
+            ion-button {
+              margin: 16px 0 0 0;
+            }
+
+            p {
+              font-size: 14px;
+              color: #777;
+              line-height: 20px;
+              margin-top: 12px;
+
+              b {color: #eee; }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -18,13 +18,13 @@ const routes: Routes = [
   //   loadChildren: () => import('./views/home/home.module').then( m => m.HomePageModule)
   // },
   // {
-  //   path: '',
+  //   path: 'about',
   //   loadChildren: () => import('./views/what-i-do/what-i-do.module').then( m => m.WhatIDoPageModule)
   // },
-  // {
-  //   path: 'what-you-see',
-  //   loadChildren: () => import('./views/what-you-see/what-you-see.module').then( m => m.WhatYouSeePageModule)
-  // },
+  {
+    path: 'about',
+    loadChildren: () => import('./views/what-you-see/what-you-see.module').then( m => m.WhatYouSeePageModule)
+  },
   {
     path: 'gaming',
     loadChildren: () => import('./views/gaming/gaming.module').then( m => m.GamingPageModule)
