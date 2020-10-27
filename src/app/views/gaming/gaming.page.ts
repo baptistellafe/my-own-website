@@ -15,37 +15,48 @@ export class GamingPage implements OnInit {
   hardware = {
     equipaments: [
       {
-        type: 'mouse'
+        type: 'mouse',
+        name: 'Logitech G703 Hero'
       },
       {
-        type: 'keyboard'
+        type: 'keyboard',
+        name: 'Corsair K70 MK.2 Rapidfire'
       },
       {
-        type: 'headset'
+        type: 'headset',
+        name: 'Corsair USB Dolby 7.1'
       },
       {
-        type: 'mousepad'
+        type: 'mousepad',
+        name: ' Corsair MM300'
       },
       {
-        type: 'i9'
+        type: 'i9',
+        name: 'Intel Core i9'
       },
       {
-        type: 'placadevideo'
+        type: 'placadevideo',
+        name: 'GeForce RTX 2080 Super Turbo'
       },
       {
-        type: 'fonte'
+        type: 'fonte',
+        name: 'Corsair 750W'
       },
       {
-        type: 'placamae'
+        type: 'placamae',
+        name: 'Asus ROG Strix Z390-H Gaming'
       },
       {
-        type: 'memoria'
+        type: 'memoria',
+        name: 'Corsair Vengeance RGB Pro'
       },
       {
-        type: 'watercooler'
+        type: 'watercooler',
+        name: 'Cooler Master Masterliquid'
       },
       {
-        type: 'ssd'
+        type: 'ssd',
+        name: 'Kingston A400, 480GB'
       },
     ],
     slidesPerView: 2,

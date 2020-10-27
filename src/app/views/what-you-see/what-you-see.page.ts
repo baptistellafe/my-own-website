@@ -1,6 +1,7 @@
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { IonicRouteStrategy } from '@ionic/angular';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IonSlides} from '@ionic/angular';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-what-you-see',
@@ -11,7 +12,9 @@ export class WhatYouSeePage implements OnInit {
 
   @ViewChild('slider') slider: IonSlides;
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Felipe Baptistella Vieira');
+  }
 
   ngOnInit() {
   }

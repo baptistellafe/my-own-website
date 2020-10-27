@@ -1,4 +1,4 @@
-import { CodeComponent } from './../../ui/code/code.component';
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatIDoPage implements OnInit {
 
-  selectColor: boolean;
+  selectColor: any;
 
-  constructor() { 
-    
+  constructor(private titleService: Title) { 
+    this.titleService.setTitle('Felipe Baptistella Vieira')
   }
 
   ngOnInit() {
